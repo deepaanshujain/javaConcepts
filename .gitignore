@@ -16,4 +16,5 @@ Jenkinsfile
 /.metadata/
 
 .attach_pid*
+*.class
 
