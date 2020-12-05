@@ -13,11 +13,11 @@ public class MethodReferenceLambdaExample {
 		performConditionally(people, p -> true, System.out::println); // Method Reference
 		performConditionally(people, p -> true, (p) -> System.out.println(p)); // Normal Lambda
 
-		Thread t = new Thread(() -> printMessage()); // Normal Lambda
+		Thread t = new Thread(() -> printMessage()); // Normal Lambda Syntax
 		t.start();
 
 		Thread t1 = new Thread(MethodReferenceLambdaExample::printMessage); // Method Reference
-		t.start();
+		t.start();s
 	}
 
 	private static void printMessage() {
